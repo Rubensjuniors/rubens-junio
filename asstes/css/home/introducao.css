@@ -1,0 +1,87 @@
+.introducao-bg {
+  background: url("../../img/introducao/medium-background.jpg") no-repeat center;
+
+  height: 80vh;
+  box-shadow: inset 0 -100px 60px #2c3232;
+  transition: 0.3s;
+}
+.introducao {
+  height: 60vh;
+  display: grid;
+  place-items: center;
+}
+.introducao-conteudo{
+  width: 700px;
+  text-align: center;
+  cursor: default;
+}
+
+.introducao-conteudo h1{
+  padding: 0px 30px 5px 30px;
+  border-bottom: 2px solid var(--cor-p1);
+  font-family: 'Righteous';
+  font-weight: 400;
+  font-size: 4rem;
+  letter-spacing: 0.16em;
+}
+
+.introducao-conteudo p{
+  padding: 5px 0px 0px 0px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.25em;
+}
+
+
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    height: 50vh;
+    background-position: center -70px;
+    transition: 0.3s;
+  }
+
+  .introducao {
+    height: 39vh;
+  }
+
+  .introducao-conteudo{
+    width: 550px;
+  }
+  .introducao-conteudo h1{
+    font-size: 3.5rem;
+  }
+.introducao-conteudo p{
+  font-size: 1.8rem;
+}
+}
+
+@media (max-width:600px){
+  .introducao-conteudo{
+    width: max-content;
+  }
+  .introducao-conteudo h1{
+    font-size: 3rem;
+  }
+.introducao-conteudo p{
+  font-size: 1.5rem;
+}
+}
+
+@media (max-width:500px){
+  .introducao-conteudo h1{
+    font-size: 2.5rem;
+  }
+.introducao-conteudo p{
+  font-size: 1.2rem;
+}
+}
+@media (max-width:400px){
+  .introducao-conteudo h1{
+    font-size: 2rem;
+  }
+.introducao-conteudo p{
+  font-size: 1rem;
+}
+}
